@@ -4,18 +4,28 @@
 
 1. What are RESTful APIs and what methods they use? 
 1. What is the difference between passing by value and passing by reference?
+2. Give examples of data encryption and when to use it.
+3. What is memoization? 
+4. What are SOLID principles in programming? 
 
 ## HTML
 
-1. What is the difference between `<div` and `<span` tags? 
-2. Give examples of HTML tag which have been deprecated in HTML5.
+1. What is the difference between `<div>` and `<span>` tags? 
+2. Give examples of HTML tags which have been deprecated in HTML5.
 3. What meta tag you should use to make a website display correctly on mobile devices? 
 
 ## CSS
 
+1. What are media queries? 
+2. What is 'Mobile first' approach in webdesign? 
+3. What CSS preprocessors you know?
+4. What CSS frameworks you know? 
+5. What is `!important` and when to use it/don't use it?
+6. What is flexbox? Give examples of flexbox properties.
+
 ## Javascript / Typescript
 
-1. Which one or more of these data types does not support Typescript?
+1. Which one or more of these data types are not supported Typescript?
     1. `number`
     1. `string`
     1. `string[]`
@@ -26,6 +36,7 @@
     1. `undefined`
     1. `void`
     <br>
+1. What's the difference between `==` and `===`?
 1. What is a scope in JavaScript?
     <br>
 1. How to select a HTML element in DOM?
@@ -73,256 +84,56 @@
 
 ## PHP
 
-1. Mark **incorrect** option
-    1. `<?php echo $value ?>`
-    1. `<?= echo $value ?>`
-    1. `<?= $value ?>`
-    1. `<? echo $value ?>`
-    
-1. Assign input values with script output
-    
-**Script**
-```
-if ($a == $b)
-if ($b == $c)
-echo '1';
-else
-echo '2';
-```
-    
-**Inputs**
-```
-1.) $a=1; $b=1; $c=3;
-2.) $a=1; $b=2; $c=3;
-3.) $a=1; $b=1; $c=1;
-```
-    
-**Outputs**
-```
-a.) no output
-b.) 1
-c.) 2
-```
-
-1. Which one **does not** belong to *magic methods*
-    1. `__kill`
-    1. `__toString`
-    1. `__construct`
-    1. `__destruct`
-
-1. Which one **is correct** definition of function in PHP
-    1. `function foo(PDO $bar) {}`
-    1. `def foo($bar) {}`
-    1. `function $foo(bar) {}`
-    1. `function PDO foo($bar) {}`
-
-1. What will be the output of following code (`mixed strpos ( string $haystack , mixed $needle [, int $offset = 0 ] )`)
-
-```php
-$haystack = 'yabadabadoo';
-$needle = 'yaba';
-if (strpos($haystack,$needle)) {
-        echo '"' . $haystack . '" contains "' . $needle . '"';
-} else {
-        echo '"' . $haystack . '" does not contain "' . $needle . '"';
-}
-```
-    1. No output
-    1. Throws an error
-    1. "yabadabadoo" contains "yaba"
-    1. "yabadabadoo" does not contain "yaba"
-
 1. What is the difference between `Abstract Class` and `Interface`?
 1. What are some of the big changes PHP has gone through in the past few years?
 1. What is `composer` used for in PHP world?
-1. What are the different types of errors in PHP ?
+1. What are the different types of errors in PHP?
 1. How can we get the IP address of the client?
+1. Do you know any functions for array manipulaiton? 
+2. What is an ORM and what ORMs you know? 
+3. How would you encrypt data in PHP? 
 
-###
+## SQL / MySQL
 
-### 1.)
+1. What is the difference between MyISAM and InnoDB storage engine in MySQL database
+1. What is the difference between the WHERE and HAVING clauses?
+2. What are joins and what's the difference between `INNER JOIN` and `OUTER JOIN`?
 
-Edit class `Foo` so that value of `$bar` can't be empty and will be always lowercase
+## Android
 
-```php
-Class Foo
-{
-    public $bar;
-} 
-$foo = new Foo;
-$foo->bar='Hello';
-```
+1. How to translate your application to other languages?
+1. What is this command used for `keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64`
+1. What are the biggest changes in newest major Android release?
+1. In what languages can you develop for Android?
+1. Why it is not possible to have installed play store version and debug version of your app on the same device at the same time?
 
-### 2.)
+1. Which permission **is** Dangerous
+    1. `INTERNET`
+    1. `VIBRATE`
+    1. `BLUETOOTH`
+    1. `CAMERA`
 
-Change data type of `$array` to `object` .
+1. Sort activity lifecycle methods
+    1. `onDestroy()`
+    1. `onPause()`
+    1. `onStart()`
+    1. `onCreate()`
+    1. `onStop()`
 
-```php
-$array = [
-    1, 'a',
-    [
-        'a' => 'A', 
-        'b' => [
-            'c' => [
-                1, 2, 3,
-                'array' => [
-                    1, 2, 3, 4,
-                    'c' => [
-                        1, 2, 3, 4, 5,
-                        'object' => [1,2,3,4,5]
-                    ]
-                ]
-            ]
-        ]
-    ]
-];
-```
+1. Which version of Android introduced `Fragment`?
+    1. Froyo (API 8)
+    1. Gingerbread (API 9)
+    1. Honeycomb (API 11)
+    1. Ice Cream Sandwich (API 14)
 
-### 3.)
+1. How to connect to running emulator shell?
+    1. `adb shell`
+    1. `android shell`
+    1. `adb terminal`
+    1. `ddms terminal`
 
-Write a program that prints the numbers from 1 to 100. But for multiples of **three** print `"Fizz"` instead of the number and for the multiples of **five** print `"Buzz"`. For numbers which are multiples of both **three and five** print `"FizzBuzz"`.
-
-### 4.)
-
-Write definition of class `Person` that could be used in following way
-
-```php
-$person = Person::make([
-    'first_name' => 'Michael', 
-    'last_name' => 'Knight', 
-    'date_of_birth' => '1949/01/09',
-]);
-
-print $person->getFullName();                 // Michael Knight
-print $person->getDateOfBirth();              // 1949/01/09
-print $person->getDateOfBirth('F j, Y');      // January 9, 1949
-```
-
-### 5.)
-
-Correct following code
-
-```php
-$result = mysql_query('SELECT * FROM customers WHERE id=' . $_GET['id']);
-```
-
-### 6.)
-
-Order first **five** letters in following string in reverse order (keep slashes)
-
-```php
-$path = "/a/b/c/d/e/f/g/h/i";
-```
-
-<div style="page-break-after: always;"></div>
-
-## Homeworks
-
-### 1.) Calendar
-
-#### Assignment
-
-* Create calendar with possibility of creating, editing, deleting and searching events
-* Possibility to define start and end of event (date and time)
-* Whole day events
-* Repeating events (daily, weekly, monthly, yearly)
-* Events per user
-
-#### Rules
-
-* Do not use server side frameworks
-* Time limit - **3 days**
-
-#### Notes
-
-* Focus on software architecture, security, user interface and data retention
-* Keep in mind clean code and OOP principles
-* Preferred technologies - PHP (5.6 / 7), MySQL, CSS 3
-
-#### Solution
-
-* Source code of application (PHP, HTML, JS, CSS, ...)
-* Database dump
-
-### 2.) RSS reader
-
-#### Assignment
-
-* Create RSS / Atom feed reader. If multiple users consumes same feed, refresh feed only once
-* Registration and login
-* Managing of feeds for users (CRUD)
-* Listing feed items
-** Link to original item
-** Searching items
-** Paging
-** Mark item as read / unread / interesting / custom tags
-* Server actualization of items
-
-#### Rules
-
-* Do not use server side frameworks
-* Time limit - **3 days**
-
-#### Notes
-
-* Focus on software architecture, security, user interface and data retention
-* Keep in mind clean code and OOP principles
-* Preferred technologies - PHP (5.6 / 7), MySQL, CSS 3
-
-#### Solution
-
-* Source code of application (PHP, HTML, JS, CSS, ...)
-* Database dump
-
-### 3.) Blog
-
-#### Assignment
-
-* Create blogging tool. Articles should have perex and publication date.
-* Tagging of articles, searching by tags, tag cloud
-* User articles
-* Title images for articles
-* Article discussions (also for non registered users)
-
-#### Rules
-
-* Do not use server side frameworks
-* Time limit - **3 days**
-
-#### Notes
-
-* Focus on software architecture, security, user interface and data retention
-* Keep in mind clean code and OOP principles
-* Preferred technologies - PHP (5.6 / 7), MySQL, CSS 3
-
-#### Solution
-
-* Source code of application (PHP, HTML, JS, CSS, ...)
-* Database dump
-
-### 4.) Guestbook
-
-#### Assignment
-
-* Create guestbook for webpage
-* User can leave message with nick
-* Time limit for adding two messages by same user
-* Disable adding messages with more than 90% similarity to other messages
-* Administrator can delete messages
-* Limit the number of messages added by one user in one day
-
-#### Rules
-
-* Do not use server side frameworks
-* Time limit - **3 days**
-
-#### Notes
-
-* Focus on software architecture, security, user interface and data retention
-* Keep in mind clean code and OOP principles
-* Preferred technologies - PHP (5.6 / 7), MySQL, CSS 3
-
-#### Solution
-
-* Source code of application (PHP, HTML, JS, CSS, ...)
-* Database dump
+1. Which definition of publicly accessible immutable variable `ZERO` is correct?
+    1. `public static int ZERO = 0;`
+    1. `private static final int ZERO = 0;`
+    1. `public static final int ZERO = 0;`
+    1. `final int ZERO = 0;`
