@@ -35,51 +35,32 @@
     1. `null`
     1. `undefined`
     1. `void`
-    <br>
 1. What's the difference between `==` and `===`?
 1. What is a scope in JavaScript?
-    <br>
 1. How to select a HTML element in DOM?
-    <br>
 1. What is a promise?
-    <br>
 1. What are the differences between Arrow functions and Regular functions?
-
 1. Which one or more of declaring a variable is incorrect in Typescript?
     1. `const message: string = 'text';`
     1. `const message: string;`
     1. `const message = 'text';`
     1. `const message;`
-    <br>
 1. How does JavaScript handle asynchronous calls?
-    <br>
 1. How does TypeScript support optional parameters in function?
-    <br>
 1. Explain Decorators in TypeScript.
-    <br>
 1. What are Generics in TypeScript?
-    <br>
 1. What are all the access modifiers that TypeScript supports?
-    <br>
 
 ## React / Redux
 
 1. What types of components exist in React?
-
 1. How do you pass data between React components?
-
 1. What is virtual DOM?
-
 1. What are React hooks and where you can use them? What are hook dependencies?
-
 1. What's a component's lifecycle? Please give examples of lifecycle methods.
-
 1. What are the most common approaches for styling a React application?
-
 1. How do you dispatch an action on redux state.
-
 1. What is the purpose of redux reducers?
-
 1. What are redux sagas and when to use them? 
 
 ## PHP
@@ -106,32 +87,27 @@
 1. What are the biggest changes in newest major Android release?
 1. In what languages can you develop for Android?
 1. Why it is not possible to have installed play store version and debug version of your app on the same device at the same time?
-
 1. Which permission **is** Dangerous
     1. `INTERNET`
     1. `VIBRATE`
     1. `BLUETOOTH`
     1. `CAMERA`
-
 1. Sort activity lifecycle methods
     1. `onDestroy()`
     1. `onPause()`
     1. `onStart()`
     1. `onCreate()`
     1. `onStop()`
-
 1. Which version of Android introduced `Fragment`?
     1. Froyo (API 8)
     1. Gingerbread (API 9)
     1. Honeycomb (API 11)
     1. Ice Cream Sandwich (API 14)
-
 1. How to connect to running emulator shell?
     1. `adb shell`
     1. `android shell`
     1. `adb terminal`
     1. `ddms terminal`
-
 1. Which definition of publicly accessible immutable variable `ZERO` is correct?
     1. `public static int ZERO = 0;`
     1. `private static final int ZERO = 0;`
